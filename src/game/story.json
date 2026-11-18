@@ -1,0 +1,93 @@
+{
+  "title": "BLACKOUT STATION",
+  "intro": "The hull is failing. Ten minutes. Find the keycards, find the pod, and do not make a sound.",
+  "terminals": {
+    "ana": {
+      "name": "Ana Reyes", "role": "MEDIC", "room": "Medbay",
+      "log": [
+        "LOG 0417 // A. REYES // MEDICAL OFFICER",
+        "I am locked in the cryo-ward with the lights off. It does not see. It listens.",
+        "I tapped the wall once and it stopped outside. Then it waved at me with one long hand. Slowly. The way you wave at a child through a window.",
+        "It was the Captain's quarters where it started. Voss went into reactor decontamination on Day 9 and the sound that came back out was not a man.",
+        "My cell battery is at 11 percent. It can open the ward, but the grid must pay 15 power. Or take what is left of my battery, 20 units, and go. I will not blame you."
+      ],
+      "choices": [
+        { "label": "FREE ANA  (-15 POWER)", "short": "Free Ana" },
+        { "label": "SIPHON HER BATTERY  (+20 POWER)", "short": "Siphon battery" }
+      ],
+      "results": [
+        "The ward cycles open. Somewhere a door whispers. She is alive.",
+        "The screen gutters. You take the battery. The terminal goes quiet."
+      ]
+    },
+    "bix": {
+      "name": "Bix Okafor", "role": "COMMS", "room": "Comms",
+      "log": [
+        "LOG 0422 // B. OKAFOR // COMMUNICATIONS",
+        "The array still works. One broadcast. Every speaker on this station would scream it for miles.",
+        "And it would hear it. It answers to voices. It has been repeating our own words back through the vents: my mother's name, Chen's laugh, Ana asking for water.",
+        "It is not hunting us because it is hungry. Voss ran the ship's last roll-call and it never stopped taking attendance.",
+        "Send the call and a rescue ship will know to come. It will also know exactly where you stand."
+      ],
+      "choices": [
+        { "label": "SEND DISTRESS CALL  (NOISE MAX, IT HUNTS 8s)", "short": "Distress call" },
+        { "label": "STAY SILENT", "short": "Stay silent" }
+      ],
+      "results": [
+        "Every speaker on the station howls your location. Bix lives. Run.",
+        "You leave the array dark. The terminal clicks off. Bix goes silent."
+      ]
+    },
+    "chen": {
+      "name": "Chen Wei", "role": "ENGINEER", "room": "Reactor",
+      "log": [
+        "LOG 0431 // C. WEI // CHIEF ENGINEER // RED CLEARANCE",
+        "Coolant loop three is cracking. I welded the door shut behind me so it would not follow. It did not try the door. It stood in the corridor and listened to me breathe.",
+        "I finally understand it. Voss did not mutate. The station did. It is still him, and it only wants someone to answer.",
+        "Light and noise are the only proof of the living. It follows both. Give it neither and it loses the thread.",
+        "I can seal the loop for 20 power, or cut it for 25. If you launch the pod, launch it in the dark. It follows the light home."
+      ],
+      "choices": [
+        { "label": "SEAL COOLANT LOOP  (-20 POWER)", "short": "Seal loop" },
+        { "label": "CUT THE LOOP  (+25 POWER)", "short": "Cut loop" }
+      ],
+      "results": [
+        "The loop seals with a long sigh of steam. Chen is alive.",
+        "The coolant bleeds out into the dark. You take the power. The screen dies."
+      ]
+    }
+  },
+  "notes": [
+    "DAY 11 - lights off in all quarters. No one sleeps.",
+    "DO NOT RUN. It hears boots on grating from three rooms away.",
+    "It waves. Why does it wave?",
+    "Pod key is in a pink locker somewhere. I forget which. God, I forget.",
+    "Generators still hold a charge. Hold the lever. Eight seconds. It will hear you.",
+    "Chen sealed himself in the Reactor. RED card opens the door.",
+    "THE QUIET ONES LIVE LONGEST",
+    "I can hear my name in the vents."
+  ],
+  "messages": {
+    "locked_red": "Locked. This door needs a RED keycard.",
+    "locked_blue": "Locked. This door needs a BLUE keycard.",
+    "no_power": "Not enough power.",
+    "dark_warn": "The dark is getting to you. Turn the flashlight on.",
+    "power_out": "POWER DEAD. The scanner screams. It can hear you.",
+    "flash_dead": "No power. The flashlight will not turn on.",
+    "no_decoy": "No decoys left.",
+    "card_hint_red": "Face a RED door and press E to open it.",
+    "card_hint_blue": "Face a BLUE door and press E to open it.",
+    "locker_empty": "Empty. Only dust and a torn glove.",
+    "pod_blue": "The pod is sealed. It needs a BLUE keycard.",
+    "pod_power": "Not enough power to launch. 10 needed."
+  },
+  "endings": {
+    "everyone": { "title": "EVERYONE OUT", "text": "Three heartbeats in a pod built for four. Behind you the station folds quietly around the thing that waved. For once, nobody is listening." },
+    "some": { "title": "SOME OF YOU", "text": "The pod clears the hull. You count the empty seats. Someone out there is still tapping on a wall, hoping you hear." },
+    "alone": { "title": "YOU, ALONE", "text": "You launch into silence. Nobody to thank you, nobody to blame you. Only the sound of your own breathing, and something very far away that sounds like clapping." },
+    "caught": { "title": "IT FOUND YOU", "text": "A long cold hand. A pale face too close. The last thing you hear is your own name, spoken in a voice you almost know." },
+    "hull": { "title": "HULL FAILURE", "text": "The station tears itself in half. It was never going to wait for you. Somewhere in the debris, something keeps waving." },
+    "dark": { "title": "LOST IN THE DARK", "text": "You stopped being able to tell where you ended and the dark began. It did not need to find you. You came to it." },
+    "quiet": { "title": "THE LONG QUIET", "text": "You killed the light and stood still as the pod charged. The thing at the glass raised one long hand, and for the first time it did not wave. It said goodbye. Captain Voss finally stopped taking attendance." }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "notes": [
+    "All textures, 3D models, sprites and sounds are generated procedurally at load time (canvas / Three.js geometry / Web Audio offline rendering). No third-party art or audio files are bundled.",
+    "Drop licensed files into src/assets/audio/ using the exact names from the brief (e.g. creak-1.ogg, monster-howl.ogg) and list them here; they automatically override the synthesized versions."
+  ],
+  "assets": [
+    { "name": "Silkscreen (pixel font)", "pack": "@fontsource/silkscreen", "author": "Jason Kottke", "source": "https://fonts.google.com/specimen/Silkscreen", "license": "OFL-1.1", "downloaded": "2026-01", "changes": "none (woff2 bundled via npm)", "path": "node_modules/@fontsource/silkscreen -> inlined in dist" },
+    { "name": "Three.js", "pack": "three", "author": "mrdoob and contributors", "source": "https://threejs.org", "license": "MIT", "downloaded": "2026-01", "changes": "none", "path": "node_modules/three" },
+    { "name": "Procedural PBR texture sets (walls, floors, ceilings, plating, rust, crate, hazard, concrete, decals, signs)", "pack": "in-engine", "author": "Blackout Station", "source": "src/game/textures.js", "license": "CC0 (original work)", "downloaded": "n/a", "changes": "generated on canvas", "path": "src/game/textures.js" },
+    { "name": "Procedural 3D models (world kit, doors, hatches, lockers, terminals, generators, pod, props, hands, items, monster)", "pack": "in-engine", "author": "Blackout Station", "source": "src/game/world.js, hands.js, monster.js", "license": "CC0 (original work)", "downloaded": "n/a", "changes": "built from Three.js primitives", "path": "src/game/" },
+    { "name": "Procedural sound bank (all effects, ambience, music layers)", "pack": "in-engine", "author": "Blackout Station", "source": "src/game/synth.js", "license": "CC0 (original work)", "downloaded": "n/a", "changes": "rendered offline with Web Audio", "path": "src/game/synth.js" }
+  ]
+}
