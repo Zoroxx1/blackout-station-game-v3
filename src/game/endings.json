@@ -1,0 +1,64 @@
+{
+  "endings": {
+    "saved_0": {
+      "id": "saved_0",
+      "title": "ALONE",
+      "cinematic": "Inside the rescue helicopter cabin, four passenger seats sit empty, their orange harnesses swaying against wet steel. Through the open sliding door, Halcyon Deep shrinks into the lightning-lit gale while a pale, hunched figure stands at the edge of the helideck, face buried in its long hands.",
+      "text": "You strap yourself into the cold webbing alone. No one speaks over the intercom; there is only the deafening thrum of the rotor blades and rain lashing the plexiglass. Four harnesses swing empty beside you as the platform drops away into the black North Sea. At the rim of the helideck, your brother kneels in the spray with his hands pressed tight over his face, weeping into a storm that swallows every sound."
+    },
+    "saved_1": {
+      "id": "saved_1",
+      "title": "ONE SEAT FILLED",
+      "cinematic": "One survivor sits across from you in the dim red cabin light, shivering under a foil blanket while three empty harnesses clatter against the bulkhead. Below the skids, the rig's flare boom gutters out in the rain, and the pale shape at the deck edge bows its head.",
+      "text": "One pair of eyes meets yours across the cabin; three seats remain empty. The survivor pulls a thermal blanket tight around shaking shoulders and looks away when the searchlight sweeps across the shrinking deck below. Down by the safety netting, a tall pale silhouette stands motionless in the downpour, long fingers hiding its face so the last light from the helicopter cannot touch it. You saved a life, and left three behind."
+    },
+    "saved_2": {
+      "id": "saved_2",
+      "title": "HALF THE CREW",
+      "cinematic": "Two crew members lean against each other in the helicopter cabin as rain blows through the open doorway. Two seats stay empty. Below, waves break white over the lower pipe deck while the creature crouches by the landing circle, shoulders shaking.",
+      "text": "Two survivors sit buckled beside you, their wet oilskins steaming in the cabin heat, while two empty seats stare back from the opposite bench. Nobody celebrates as the skids lift clear of the yellow landing circle. Through the open doorway, you watch the sea break over the lower walkways and catch one last glimpse of Eli crouched at the edge of the steel, hiding his face in his hands as the darkness takes the rig."
+    },
+    "saved_3": {
+      "id": "saved_3",
+      "title": "ALMOST",
+      "cinematic": "Three survivors fill the bench across from you, gripping the straps as the helicopter banks into the gale. One seat remains empty. At the edge of the helideck below, the pale figure lowers its shoulders in the rain as its faint sobbing fades under the headset static.",
+      "text": "Three of your crewmates breathe the cold night air beside you, alive because you stopped for them, yet every glance drifts toward the single empty harness on the wall. As the pilot pulls pitch and the platform tilts away into the foam, a faint wet sobbing bleeds briefly through the headset static. Down on the rain-swept steel, Eli stands with his face hidden in his palms, mourning the one who never made it up the stairs."
+    },
+    "saved_4": {
+      "id": "saved_4",
+      "title": "EVERYONE",
+      "cinematic": "All four survivors—Ana, Bix, Chen, and Dara—sit shoulder to shoulder in the helicopter cabin, holding hands as the rig falls away beneath the storm clouds. At the helideck edge, the creature stands still with its face covered, watching through parted fingers only after the light is gone.",
+      "text": "Ana, Bix, Chen, and Dara sit shoulder to shoulder along the cabin bench, their bruised hands clasped together as the rotors claw into the gale. Not one soul was left behind in the flooded steel. Looking back through the open door, you see Halcyon Deep sink into the rain and whitecaps. At the edge of the helideck, your brother stands with his face buried in his hands, weeping quietly—safe at last from being seen."
+    },
+    "locket_peace": {
+      "id": "locket_peace",
+      "title": "QUIET WATER",
+      "cinematic": "At the edge of the helideck, the tarnished silver locket rests on the wet steel grating. The pale creature steps out of the rain, kneels beside it without raising its face, and cradles the locket against its hollow chest as the helicopter lifts into the storm.",
+      "text": "Before boarding, you set Eli's tarnished locket down on the wet perimeter grating. When the rotors spool up, the pale figure emerges from the shadow of the crane—not screaming, not lunging. Slowly, it folds its long legs and kneels at the edge of the deck, pressing the small silver locket to its chest with one scarred hand while the other shields its eyes. As the helicopter climbs into the clouds, the weeping finally stops."
+    },
+    "elis_rest": {
+      "id": "elis_rest",
+      "title": "ELI'S REST",
+      "cinematic": "All four crew members sit safe inside the warm cabin, holding hands as you look down through the open door. On the helideck edge, Eli kneels calmly in the rain, holding the silver locket to his chest, his shoulders finally still as the rig disappears into the sea.",
+      "text": "Ana, Bix, Chen, and Dara sit together in the warm cabin, every seat filled, every hand held fast. Down on the storm-lashed helideck, Eli kneels where you left his locket on the steel. He does not rage or hide; he cradles the small silver keepsake against his ribs and bows his head in peace as the waves close over the lower decks. You brought his friends home, and you gave your brother back his name."
+    },
+    "caught": {
+      "id": "caught",
+      "title": "SEEN",
+      "cinematic": "Two long, salt-crusted hands fill the frame. A pale, waterlogged face lunges out of the dark, its jaw unhinged in a soundless, ashamed shriek before the camera cuts to black.",
+      "text": "You looked, and he could not stop himself. Long, brine-wet fingers close around your flashlight before you can turn away. Up close, through the terrible unhinged scream, the pale eyes are still your brother's—wide with grief that you saw what the sea made of him."
+    },
+    "hull": {
+      "id": "hull",
+      "title": "CLAIMED BY THE SEA",
+      "cinematic": "A monstrous wave shears the derrick tower from the deck. The rescue helicopter banks away into the lightning as Halcyon Deep buckles into the black North Sea.",
+      "text": "Ten minutes ran out. With a sound like cannon fire, the starboard support leg gives way to the storm swell. Up on the helideck, the rescue pilot is forced to bank away into the sleet as the platform rolls into the black water, taking you, the machinery, and the weeping in the pipes down to the cavern below."
+    },
+    "dark": {
+      "id": "dark",
+      "title": "LOST IN THE DARK",
+      "cinematic": "Your flashlight lens hangs cold and dead. In the pitch-black corridor, cold salt water rises around your boots as your breathing fades into the sound of rain.",
+      "text": "The cold and the pitch dark took the last of your strength. Your knees hit the wet grating, and the dead flashlight rolls out of your fingers into a puddle of brine. Somewhere down the corridor, bare wet footsteps shuffle closer, stop beside you in the dark, and sit down to weep so you do not have to be alone."
+    }
+  }
+}

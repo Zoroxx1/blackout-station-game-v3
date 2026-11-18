@@ -1,0 +1,623 @@
+{
+  "wallStyles": {
+    "calm": [0, 1],
+    "accent": [2, 3, 4, 5, 6],
+    "heavy": [7]
+  },
+  "roomTypes": {
+    "crew_quarters": {
+      "name": "Crew Quarters",
+      "zone": 0,
+      "sizeClasses": ["small", "medium"],
+      "doorStyle": "cabin",
+      "wallStyles": [0, 1],
+      "lightMood": { "type": "fluorescent_warm", "color": "0xffe0b2", "intensity": 6, "flicker": true },
+      "roomTone": "tone-quarters",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "quarters_A",
+          "name": "Four Bunk Stacks",
+          "requiredProps": [
+            { "kind": "bunk_stack", "anchor": "wall", "count": 2 },
+            { "kind": "personal_locker", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["photo_frame", "boots", "blanket", "guitar", "card_game", "mug"]
+        },
+        "B": {
+          "id": "quarters_B",
+          "name": "Six Single Bunks & Shared Table",
+          "requiredProps": [
+            { "kind": "bunk_single", "anchor": "wall", "count": 3 },
+            { "kind": "mess_table", "anchor": "center", "count": 1 }
+          ],
+          "randomProps": ["photo_frame", "boots", "blanket", "guitar", "card_game", "child_drawing"]
+        }
+      }
+    },
+    "mess_galley": {
+      "name": "Mess & Galley",
+      "zone": 0,
+      "sizeClasses": ["medium", "large"],
+      "doorStyle": "porthole_swing",
+      "wallStyles": [0, 6],
+      "lightMood": { "type": "fluorescent_warm", "color": "0xffd8a8", "intensity": 7, "flicker": true },
+      "roomTone": "tone-galley",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "galley_A",
+          "name": "Long Tables & Serving Counter",
+          "requiredProps": [
+            { "kind": "mess_table", "anchor": "center", "count": 2 },
+            { "kind": "serving_counter", "anchor": "wall", "count": 1 },
+            { "kind": "galley_stove", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["tray", "mug", "spilled_meal", "calendar", "tv_mount"]
+        },
+        "B": {
+          "id": "galley_B",
+          "name": "Round Tables & Walk-In Fridge",
+          "requiredProps": [
+            { "kind": "round_table", "anchor": "center", "count": 2 },
+            { "kind": "vending_machine", "anchor": "wall", "count": 1 },
+            { "kind": "fridge_door", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["tray", "mug", "spilled_meal", "calendar", "hanging_pans"]
+        }
+      }
+    },
+    "locker_shower": {
+      "name": "Locker & Shower",
+      "zone": 0,
+      "sizeClasses": ["small"],
+      "doorStyle": "cabin",
+      "wallStyles": [0, 6],
+      "lightMood": { "type": "caged_work", "color": "0xd8ecff", "intensity": 5, "flicker": true },
+      "roomTone": "tone-quarters",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "locker_A",
+          "name": "Locker Rows & Bench",
+          "requiredProps": [
+            { "kind": "personal_locker", "anchor": "wall", "count": 2 },
+            { "kind": "bench", "anchor": "center", "count": 1 },
+            { "kind": "shower_line", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["towel", "boots", "wet_footprints"]
+        },
+        "B": {
+          "id": "locker_B",
+          "name": "Shower Stalls & Drying Rack",
+          "requiredProps": [
+            { "kind": "personal_locker", "anchor": "wall", "count": 1 },
+            { "kind": "shower_stall", "anchor": "wall", "count": 2 },
+            { "kind": "drying_rack", "anchor": "corner", "count": 1 }
+          ],
+          "randomProps": ["towel", "boots", "wet_footprints"]
+        }
+      }
+    },
+    "medical_bay": {
+      "name": "Medical Bay",
+      "zone": 0,
+      "sizeClasses": ["small", "medium"],
+      "doorStyle": "med_double",
+      "wallStyles": [0, 4],
+      "lightMood": { "type": "fluorescent_cold", "color": "0xdcf0ff", "intensity": 7, "flicker": true },
+      "roomTone": "tone-medbay",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "medbay_A",
+          "name": "Two Beds & Defibrillator Wall",
+          "requiredProps": [
+            { "kind": "med_bed", "anchor": "wall", "count": 2 },
+            { "kind": "med_cabinet", "anchor": "wall", "count": 1 },
+            { "kind": "defibrillator", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["bandages", "clipboard", "spilled_pills", "bloody_towel"]
+        },
+        "B": {
+          "id": "medbay_B",
+          "name": "Treatment Table & Stretcher",
+          "requiredProps": [
+            { "kind": "med_bed", "anchor": "wall", "count": 1 },
+            { "kind": "stretcher", "anchor": "wall", "count": 1 },
+            { "kind": "treatment_table", "anchor": "center", "count": 1 },
+            { "kind": "iv_stand", "anchor": "corner", "count": 1 }
+          ],
+          "randomProps": ["bandages", "clipboard", "spilled_pills", "bloody_towel"]
+        }
+      }
+    },
+    "control_room": {
+      "name": "Control Room",
+      "zone": 1,
+      "sizeClasses": ["medium", "large"],
+      "doorStyle": "glass_sliding",
+      "wallStyles": [0, 3],
+      "lightMood": { "type": "screen_glow", "color": "0x58d8ff", "intensity": 8, "flicker": false },
+      "roomTone": "tone-control",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "control_A",
+          "name": "Console Wall & Rig Schematic",
+          "requiredProps": [
+            { "kind": "console_bank", "anchor": "wall", "count": 2 },
+            { "kind": "chair", "anchor": "center", "count": 2 },
+            { "kind": "schematic_board", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["papers", "headset", "clipboard", "mug", "tipped_chair", "cracked_screen"]
+        },
+        "B": {
+          "id": "control_B",
+          "name": "Horseshoe Consoles & CCTV Wall",
+          "requiredProps": [
+            { "kind": "console_horseshoe", "anchor": "center", "count": 1 },
+            { "kind": "captain_chair", "anchor": "center", "count": 1 },
+            { "kind": "cctv_wall", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["papers", "headset", "clipboard", "mug", "cracked_screen"]
+        }
+      }
+    },
+    "radio_room": {
+      "name": "Radio Room",
+      "zone": 1,
+      "sizeClasses": ["small"],
+      "doorStyle": "cabin",
+      "wallStyles": [0, 3],
+      "lightMood": { "type": "screen_glow", "color": "0x70e8ff", "intensity": 6, "flicker": true },
+      "roomTone": "tone-control",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "radio_A",
+          "name": "Radio Racks & Map Table",
+          "requiredProps": [
+            { "kind": "radio_rack", "anchor": "wall", "count": 2 },
+            { "kind": "headset_desk", "anchor": "wall", "count": 1 },
+            { "kind": "map_table", "anchor": "center", "count": 1 }
+          ],
+          "randomProps": ["logbook", "spare_batteries", "handheld_radio"]
+        },
+        "B": {
+          "id": "radio_B",
+          "name": "Corner Transceiver & Frequency Board",
+          "requiredProps": [
+            { "kind": "transceiver_desk", "anchor": "corner", "count": 1 },
+            { "kind": "freq_board", "anchor": "wall", "count": 1 },
+            { "kind": "bunk_single", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["logbook", "spare_batteries", "handheld_radio"]
+        }
+      }
+    },
+    "lab": {
+      "name": "Geolab",
+      "zone": 1,
+      "sizeClasses": ["small", "medium"],
+      "doorStyle": "airlock",
+      "wallStyles": [0, 4],
+      "lightMood": { "type": "fluorescent_cold", "color": "0xc8f4ff", "intensity": 7, "flicker": false },
+      "roomTone": "tone-lab",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "lab_A",
+          "name": "Lab Bench & Core Trays",
+          "requiredProps": [
+            { "kind": "lab_bench", "anchor": "center", "count": 1 },
+            { "kind": "core_tray", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["sample_tubes", "seabed_map", "pinned_notes"]
+        },
+        "B": {
+          "id": "lab_B",
+          "name": "Sample Shelving & Fume Hood",
+          "requiredProps": [
+            { "kind": "shelf", "anchor": "wall", "count": 2 },
+            { "kind": "fume_hood", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["sample_tubes", "seabed_map", "pinned_notes"]
+        }
+      }
+    },
+    "office": {
+      "name": "Platform Office",
+      "zone": 1,
+      "sizeClasses": ["small", "closet"],
+      "doorStyle": "cabin",
+      "wallStyles": [0, 1],
+      "lightMood": { "type": "fluorescent_warm", "color": "0xffe4b8", "intensity": 6, "flicker": false },
+      "roomTone": "tone-control",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "office_A",
+          "name": "Executive Desk & Filing Wall",
+          "requiredProps": [
+            { "kind": "office_desk", "anchor": "center", "count": 1 },
+            { "kind": "filing_cabinet", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["papers", "safe_box", "photo_frame", "mug"]
+        },
+        "B": {
+          "id": "office_B",
+          "name": "Corner Desk & Safe",
+          "requiredProps": [
+            { "kind": "office_desk", "anchor": "wall", "count": 1 },
+            { "kind": "filing_cabinet", "anchor": "corner", "count": 1 },
+            { "kind": "safe_box", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["papers", "photo_frame", "clipboard"]
+        }
+      }
+    },
+    "engine_room": {
+      "name": "Engine & Generator",
+      "zone": 2,
+      "sizeClasses": ["large", "two_level"],
+      "doorStyle": "watertight",
+      "wallStyles": [0, 7],
+      "lightMood": { "type": "emergency_red", "color": "0xff5a20", "intensity": 8, "flicker": true },
+      "roomTone": "tone-engine",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "engine_A",
+          "name": "Twin Center Turbines & Catwalk",
+          "requiredProps": [
+            { "kind": "diesel_generator", "anchor": "center", "count": 2 },
+            { "kind": "pipe_rack", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["tool_cart", "oil_puddle", "loose_panel"]
+        },
+        "B": {
+          "id": "engine_B",
+          "name": "Three Generator Row & Control Cabinet",
+          "requiredProps": [
+            { "kind": "diesel_generator", "anchor": "wall", "count": 2 },
+            { "kind": "control_cabinet", "anchor": "wall", "count": 1 },
+            { "kind": "drip_tray", "anchor": "center", "count": 1 }
+          ],
+          "randomProps": ["tool_cart", "oil_puddle", "loose_panel"]
+        }
+      }
+    },
+    "pump_room": {
+      "name": "Pump Room",
+      "zone": 2,
+      "sizeClasses": ["medium", "l_shape"],
+      "doorStyle": "watertight",
+      "wallStyles": [0, 7],
+      "lightMood": { "type": "caged_work", "color": "0xffb84d", "intensity": 6, "flicker": false },
+      "roomTone": "tone-pump",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "pump_A",
+          "name": "Inline Mud Pumps & Manifolds",
+          "requiredProps": [
+            { "kind": "mud_pump", "anchor": "center", "count": 2 },
+            { "kind": "pipe_manifold", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["valve_wheel", "brine_puddle", "loose_pipes"]
+        },
+        "B": {
+          "id": "pump_B",
+          "name": "Central Brine Tank & Walkway",
+          "requiredProps": [
+            { "kind": "tank", "anchor": "center", "count": 1 },
+            { "kind": "mud_pump", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["valve_wheel", "brine_puddle", "loose_pipes"]
+        }
+      }
+    },
+    "electrical_switch": {
+      "name": "Switchgear Room",
+      "zone": 2,
+      "sizeClasses": ["small", "closet"],
+      "doorStyle": "cabin",
+      "wallStyles": [0, 2],
+      "lightMood": { "type": "caged_work", "color": "0xffaa38", "intensity": 5, "flicker": true },
+      "roomTone": "tone-workshop",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "switch_A",
+          "name": "Tall Switchgear Bank",
+          "requiredProps": [
+            { "kind": "switch_cabinet", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["loose_cables", "warning_cone", "tool_box"]
+        },
+        "B": {
+          "id": "switch_B",
+          "name": "Facing Breaker Rows & Cable Trench",
+          "requiredProps": [
+            { "kind": "switch_cabinet", "anchor": "wall", "count": 2 },
+            { "kind": "cable_trench", "anchor": "center", "count": 1 }
+          ],
+          "randomProps": ["loose_cables", "warning_cone"]
+        }
+      }
+    },
+    "workshop": {
+      "name": "Machine Workshop",
+      "zone": 2,
+      "sizeClasses": ["medium"],
+      "doorStyle": "roller_shutter",
+      "wallStyles": [0, 2],
+      "lightMood": { "type": "caged_work", "color": "0xffd278", "intensity": 7, "flicker": false },
+      "roomTone": "tone-workshop",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "workshop_A",
+          "name": "Workbenches & Lathe",
+          "requiredProps": [
+            { "kind": "bench", "anchor": "wall", "count": 2 },
+            { "kind": "lathe_machine", "anchor": "center", "count": 1 },
+            { "kind": "tool_wall", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["tool_box", "half_repair", "loose_pipes"]
+        },
+        "B": {
+          "id": "workshop_B",
+          "name": "Welding Bay & Gas Cylinders",
+          "requiredProps": [
+            { "kind": "welding_bay", "anchor": "center", "count": 1 },
+            { "kind": "gas_bottles", "anchor": "corner", "count": 1 },
+            { "kind": "shelf", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["tool_box", "half_repair", "warning_cone"]
+        }
+      }
+    },
+    "cold_storage": {
+      "name": "Cold Storage",
+      "zone": 2,
+      "sizeClasses": ["small"],
+      "doorStyle": "insulated_latch",
+      "wallStyles": [0, 6],
+      "lightMood": { "type": "fluorescent_cold", "color": "0xa8e0ff", "intensity": 5, "flicker": true },
+      "roomTone": "tone-cold",
+      "reverb": "small",
+      "layouts": {
+        "A": {
+          "id": "cold_A",
+          "name": "Freezer Racks & Floor Drain",
+          "requiredProps": [
+            { "kind": "freezer_rack", "anchor": "wall", "count": 2 },
+            { "kind": "frozen_boxes", "anchor": "corner", "count": 1 }
+          ],
+          "randomProps": ["tipped_boxes", "frost_patch"]
+        },
+        "B": {
+          "id": "cold_B",
+          "name": "Walk-In Chiller & Hooks",
+          "requiredProps": [
+            { "kind": "meat_hooks", "anchor": "center", "count": 1 },
+            { "kind": "freezer_rack", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["tipped_boxes", "frost_patch"]
+        }
+      }
+    },
+    "storage": {
+      "name": "Deck Storage",
+      "zone": 3,
+      "sizeClasses": ["medium", "large"],
+      "doorStyle": "roller_shutter",
+      "wallStyles": [0, 5],
+      "lightMood": { "type": "caged_work", "color": "0xffc468", "intensity": 6, "flicker": false },
+      "roomTone": "tone-storage",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "storage_A",
+          "name": "Three Shelving Aisles & Cage",
+          "requiredProps": [
+            { "kind": "shelf", "anchor": "center", "count": 2 },
+            { "kind": "caged_rack", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["crate", "barrel", "broken_crate", "tarp_stack"]
+        },
+        "B": {
+          "id": "storage_B",
+          "name": "Barrel Pallets & Forklift",
+          "requiredProps": [
+            { "kind": "forklift", "anchor": "center", "count": 1 },
+            { "kind": "crate", "anchor": "wall", "count": 2 },
+            { "kind": "barrel", "anchor": "corner", "count": 2 }
+          ],
+          "randomProps": ["crate", "barrel", "loose_pipes", "tarp_stack"]
+        }
+      }
+    },
+    "pipe_deck": {
+      "name": "Pipe Deck",
+      "zone": 3,
+      "sizeClasses": ["long", "medium"],
+      "doorStyle": "roller_shutter",
+      "wallStyles": [0, 2],
+      "lightMood": { "type": "caged_work", "color": "0xffb048", "intensity": 6, "flicker": false },
+      "roomTone": "tone-storage",
+      "reverb": "corridor",
+      "layouts": {
+        "A": {
+          "id": "pipedeck_A",
+          "name": "Drill Pipe Racks & Winch",
+          "requiredProps": [
+            { "kind": "pipe_rack", "anchor": "wall", "count": 2 },
+            { "kind": "winch_drum", "anchor": "corner", "count": 1 }
+          ],
+          "randomProps": ["loose_pipes", "life_ring", "barrel"]
+        },
+        "B": {
+          "id": "pipedeck_B",
+          "name": "Riser Stack & Crane Hook",
+          "requiredProps": [
+            { "kind": "pipe_rack", "anchor": "center", "count": 1 },
+            { "kind": "crate", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["loose_pipes", "life_ring", "warning_cone"]
+        }
+      }
+    },
+    "moon_pool": {
+      "name": "Moon Pool",
+      "zone": 3,
+      "sizeClasses": ["large"],
+      "doorStyle": "watertight",
+      "wallStyles": [0, 2],
+      "lightMood": { "type": "caged_work", "color": "0x78c8ff", "intensity": 7, "flicker": true },
+      "roomTone": "tone-moonpool",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "moonpool_A",
+          "name": "Square Sea Pool & Gantry Crane",
+          "requiredProps": [
+            { "kind": "moon_pool_square", "anchor": "center", "count": 1 },
+            { "kind": "gantry_frame", "anchor": "wall", "count": 1 },
+            { "kind": "dive_rack", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["dive_tank", "wetsuit_stand", "rope_coil", "life_ring"]
+        },
+        "B": {
+          "id": "moonpool_B",
+          "name": "Round Sea Well & Diving Bell",
+          "requiredProps": [
+            { "kind": "moon_pool_round", "anchor": "center", "count": 1 },
+            { "kind": "diving_bell", "anchor": "wall", "count": 1 },
+            { "kind": "winch_drum", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["dive_tank", "wetsuit_stand", "rope_coil", "life_ring"]
+        }
+      }
+    },
+    "lifeboat_station": {
+      "name": "Lifeboat Station",
+      "zone": 4,
+      "sizeClasses": ["large", "medium"],
+      "doorStyle": "large_hatch",
+      "wallStyles": [0, 2],
+      "lightMood": { "type": "emergency_red", "color": "0xff7828", "intensity": 7, "flicker": true },
+      "roomTone": "tone-lifeboat",
+      "reverb": "hall",
+      "layouts": {
+        "A": {
+          "id": "lifeboat_A",
+          "name": "Orange Lifeboat on Davits",
+          "requiredProps": [
+            { "kind": "lifeboat_davits", "anchor": "wall", "count": 1 },
+            { "kind": "launch_panel", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["rope_coil", "life_ring", "life_jacket_rack", "broken_lever"]
+        },
+        "B": {
+          "id": "lifeboat_B",
+          "name": "Twin Lifeboat Bays & Gear Rack",
+          "requiredProps": [
+            { "kind": "lifeboat_davits", "anchor": "wall", "count": 1 },
+            { "kind": "life_jacket_rack", "anchor": "wall", "count": 2 }
+          ],
+          "randomProps": ["rope_coil", "life_ring", "broken_lever"]
+        }
+      }
+    },
+    "escape_vestibule": {
+      "name": "Helideck Vestibule",
+      "zone": 4,
+      "sizeClasses": ["small", "medium"],
+      "doorStyle": "large_hatch",
+      "wallStyles": [0, 2],
+      "lightMood": { "type": "emergency_red", "color": "0xff9020", "intensity": 8, "flicker": true },
+      "roomTone": "tone-lifeboat",
+      "reverb": "corridor",
+      "layouts": {
+        "A": {
+          "id": "vestibule_A",
+          "name": "Stairwell & Decompression Lock",
+          "requiredProps": [
+            { "kind": "stair_flights", "anchor": "wall", "count": 1 },
+            { "kind": "windsock_window", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["life_ring", "warning_cone"]
+        },
+        "B": {
+          "id": "vestibule_B",
+          "name": "Storm Airlock & Gear Bench",
+          "requiredProps": [
+            { "kind": "stair_flights", "anchor": "wall", "count": 1 },
+            { "kind": "bench", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["life_ring", "rope_coil"]
+        }
+      }
+    },
+    "helideck": {
+      "name": "Helideck",
+      "zone": 4,
+      "sizeClasses": ["open_deck"],
+      "doorStyle": "escape_gate",
+      "wallStyles": [0, 2],
+      "lightMood": { "type": "storm_deck", "color": "0x80b8ff", "intensity": 9, "flicker": true },
+      "roomTone": "tone-helideck",
+      "reverb": "outdoor",
+      "layouts": {
+        "A": {
+          "id": "helideck_A",
+          "name": "Helideck Landing Circle & Rescue Chopper",
+          "requiredProps": [
+            { "kind": "helicopter", "anchor": "center", "count": 1 },
+            { "kind": "windsock_pole", "anchor": "corner", "count": 1 },
+            { "kind": "fire_monitor", "anchor": "corner", "count": 1 },
+            { "kind": "deck_crane", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["crate", "barrel"]
+        },
+        "B": {
+          "id": "helideck_B",
+          "name": "Storm Helideck & Perimeter Net",
+          "requiredProps": [
+            { "kind": "helicopter", "anchor": "center", "count": 1 },
+            { "kind": "windsock_pole", "anchor": "corner", "count": 1 },
+            { "kind": "fire_monitor", "anchor": "wall", "count": 1 }
+          ],
+          "randomProps": ["crate", "barrel"]
+        }
+      }
+    },
+    "corridor": {
+      "name": "Deck Corridor",
+      "zone": -1,
+      "sizeClasses": ["long", "small"],
+      "doorStyle": "cabin",
+      "wallStyles": [0, 1],
+      "lightMood": { "type": "caged_work", "color": "0xffb050", "intensity": 5, "flicker": false },
+      "roomTone": "tone-corridor",
+      "reverb": "corridor",
+      "layouts": {
+        "A": {
+          "id": "corridor_A",
+          "name": "Main Spine Walkway",
+          "requiredProps": [],
+          "randomProps": ["life_ring", "warning_cone"]
+        },
+        "B": {
+          "id": "corridor_B",
+          "name": "Pipe & Grating Passage",
+          "requiredProps": [],
+          "randomProps": ["life_ring", "loose_pipes"]
+        }
+      }
+    }
+  }
+}

@@ -1,93 +1,226 @@
 {
-  "title": "BLACKOUT STATION",
-  "intro": "The hull is failing. Ten minutes. Find the keycards, find the pod, and do not make a sound.",
+  "title": "BLACKOUT STATION: HALCYON DEEP",
+  "scpNotice": "Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under Creative Commons Sharealike 3.0 and all concepts originate from scpwiki.com and its authors. Blackout Station: Halcyon Deep, being derived from this content, is hereby also released under Creative Commons Sharealike 3.0.",
+  "intro": "Halcyon Deep is breaking apart in the storm. A rescue helicopter is holding on the helideck. Find the crew, find the blue keycard, and do not look at its face.",
+  "logs": [
+    {
+      "id": "L01",
+      "title": "ORDER TO HOLD POSITION",
+      "author": "Capt. Mallory Reid",
+      "roomType": "crew_quarters",
+      "words": 56,
+      "text": "Barometer dropped twelve millibars since noon and the gale is already tearing spray over B-deck. Shore ops refused our evacuation request again. Everybody stays in quarters with life vests on the hooks and boots by the bunks. Ignore the groaning in the freshwater risers; old steel talks when a sixty-foot swell hits the legs."
+    },
+    {
+      "id": "L02",
+      "title": "CORE SAMPLE 88-B",
+      "author": "Dr. Imani Okoro",
+      "roomType": "lab",
+      "words": 58,
+      "text": "Fourteen days ago the bit broke through basalt at three thousand meters and dropped into an open pocket below the seabed. The brine that came up the return line smelled of winter rot and old copper, cold enough to frost the glass vials. When I held the hydrophone to the casing, the water down there was too quiet."
+    },
+    {
+      "id": "L03",
+      "title": "SATURATION DIVE LOG #19",
+      "author": "Eli Vance",
+      "roomType": "moon_pool",
+      "words": 59,
+      "text": "Checking the blowout preventer below the moon pool before the squall shuts us down. Greased my neck ring, checked the umbilical, and taped Nora's postcard inside the bell so I have something warm to look at on decompression. The black water in the well is dead flat today, like oiled glass. Dropping under now—keep the coffee hot."
+    },
+    {
+      "id": "L04",
+      "title": "FINAL UMBILICAL TRANSCRIPT",
+      "author": "Bix Okafor",
+      "roomType": "radio_room",
+      "words": 61,
+      "text": "Eleven days ago Eli's carrier came back on channel four, six hours after his air should have run dry. All I heard at first was salt water dripping onto the microphone and his teeth chattering. Then he whispered, 'Cut the winch cable, Bix. Don't send a rescue diver down, and don't turn the floodlights on the pool. Please.'"
+    },
+    {
+      "id": "L05",
+      "title": "INFIRMARY SHIFT NOTES",
+      "author": "Ana Reyes",
+      "roomType": "medical_bay",
+      "words": 55,
+      "text": "Issued the last of the sedatives at 03:00. Four roughnecks came in with raw knuckles and bloodshot eyes, swearing someone was sobbing inside the ventilation trunk above their bunks. The damp bandage rolls on my tray smell of rust and sea salt. Whoever is crying in those ducts sounds ashamed to be heard."
+    },
+    {
+      "id": "L06",
+      "title": "CHALKED ON THE MENU BOARD",
+      "author": "Dara Holt",
+      "roomType": "mess_galley",
+      "words": 57,
+      "text": "Poured three pots of potato soup down the grease trap because nobody touched a bowl at change of shift. Even with the range burners roaring, the stainless prep tables stay clammy with salt mist. At two in the morning the drainpipe behind the dishwasher started weeping like a lost boy, and I left a loaf of bread beside it."
+    },
+    {
+      "id": "L07",
+      "title": "TURBINE WATCH REPORT",
+      "author": "Chen Wei",
+      "roomType": "engine_room",
+      "words": 62,
+      "text": "Seven nights ago I swung my work lamp toward the bilge ladder and saw its face for one second. Chalk-white skin, ribs like barrel hoops, and wet eyes that flinched as if my light had burned it. The smell of diesel and warm bilge froze in my throat. I smashed my own bulb with a wrench and ran before the screaming started."
+    },
+    {
+      "id": "L08",
+      "title": "PLATFORM ABANDONMENT DIRECTIVE",
+      "author": "Capt. Mallory Reid",
+      "roomType": "control_room",
+      "words": 63,
+      "text": "All hands to the helideck immediately. Coast Guard Sikorsky is inbound through the lightning and will hold above the H-pad as long as fuel permits. The blue master keycard for the helideck blast gate is locked in a supply chest—take it and go. I have smashed every CCTV monitor on the console wall; do not look at the camera feeds."
+    },
+    {
+      "id": "L09",
+      "title": "UNSENT LETTER ON BUNK 4",
+      "author": "Eli Vance",
+      "roomType": "crew_quarters",
+      "words": 60,
+      "text": "Dear Nora, the ink is smudging because my fingers won't stop dripping cold brine onto the paper. If you transferred onto Halcyon Deep this hitch, stay in the brightly lit cabins and keep your eyes on the floor grating. I remember the birthday locket you gave me, even if my jaw won't close right anymore. Don't look at me, little sister."
+    },
+    {
+      "id": "L10",
+      "title": "MAINTENANCE BENCH MEMO",
+      "author": "J. Lindqvist, Mechanic",
+      "roomType": "workshop",
+      "words": 56,
+      "text": "Look at the steel hinges on the corridor fire door—torn clean out of the bulkhead like wet cardboard, grease still smoking on the sheared bolts. Yet it walked right past me in the dark while I stared at my boots, brushing my shoulder with ice-cold knuckles and whimpering. It only hunts the ones who see its face."
+    },
+    {
+      "id": "L11",
+      "title": "INVENTORY CLIPBOARD",
+      "author": "Dara Holt",
+      "roomType": "cold_storage",
+      "words": 54,
+      "text": "I locked myself inside the walk-in chiller with a crate of ration bars and my wool coat pulled over my ears. Frost crystals are stinging my eyelashes every time I breathe out. Before I bolted the latch, I left two tins of stew by the threshold because Eli always hated going hungry on night watch."
+    },
+    {
+      "id": "L12",
+      "title": "DAVIT LAUNCH LOG",
+      "author": "Capt. Mallory Reid",
+      "roomType": "lifeboat_station",
+      "words": 57,
+      "text": "We tried lowering Lifeboat One at 21:40 with six men aboard. A forty-foot crest slammed the fiberglass hull into the cross-bracing before the release hooks cleared, snapping the forward steel cable like twine. Salt spray and diesel fumes are blowing back through the smashed hatch. There is no way off this rig by sea."
+    },
+    {
+      "id": "L13",
+      "title": "TELEX FROM ABERDEEN OPS",
+      "author": "Corporate Operations",
+      "roomType": "office",
+      "words": 53,
+      "text": "CONFIDENTIAL: Platform downtime exceeds quarterly variance by four hundred thousand dollars per day. Captain Reid is instructed to delay non-essential helicopter sorties until the low-pressure front passes on Thursday. The damp thermal paper of this telex curls over the desk blotter, stamped RECEIVED two hours before the main bus failed."
+    },
+    {
+      "id": "L14",
+      "title": "VOICE RECORDER IN THE BILGE",
+      "author": "Eli Vance",
+      "roomType": "pump_room",
+      "words": 61,
+      "text": "The tape hisses with dripping brine and the throb of mud pumps. 'It's Eli. My skin feels like wet chalk and the light hurts my eyes so much I can't think when someone looks at me. Something inside my chest makes me run at them until they stop looking. I can't let you see me. If Nora comes, tell her to go home.'"
+    },
+    {
+      "id": "L15",
+      "title": "SCRATCHED INTO THE BULKHEAD",
+      "author": "Unknown Roughneck",
+      "roomType": "corridor",
+      "words": 49,
+      "text": "Nine vertical tally marks gouged into the yellow paint with a screwdriver, crusted with dried salt and rust at the edges. Underneath someone scratched in shaking letters: COUNT COST OF LIGHT. CLOSE HEAVY DOORS BEHIND YOU. IF IT SCREAMS, RUN FOR THE WATERTIGHT HATCH AND DO NOT LOOK BACK."
+    },
+    {
+      "id": "L16",
+      "title": "VHF CHANNEL 16 TRANSMISSION",
+      "author": "Rescue Pilot Mercer",
+      "roomType": "escape_vestibule",
+      "words": 54,
+      "text": "Halcyon Deep, this is Rescue Zero-Four holding on your helideck pad. Wind is gusting sixty knots and sleet is icing our rotor blades, so I can feel the airframe shuddering through the pedals. We see your blast gate beacon at the top of the stairs. Hurry up—I'll wait as long as I can."
+    }
+  ],
   "terminals": {
     "ana": {
-      "name": "Ana Reyes", "role": "MEDIC", "room": "Medbay",
+      "name": "Ana Reyes", "role": "MEDIC", "room": "Medical Bay",
       "log": [
-        "LOG 0417 // A. REYES // MEDICAL OFFICER",
-        "I am locked in the cryo-ward with the lights off. It does not see. It listens.",
-        "I tapped the wall once and it stopped outside. Then it waved at me with one long hand. Slowly. The way you wave at a child through a window.",
-        "It was the Captain's quarters where it started. Voss went into reactor decontamination on Day 9 and the sound that came back out was not a man.",
-        "My cell battery is at 11 percent. It can open the ward, but the grid must pay 15 power. Or take what is left of my battery, 20 units, and go. I will not blame you."
+        "LOG 05 // A. REYES // PLATFORM MEDIC",
+        "Four roughnecks came in with raw knuckles and bloodshot eyes, swearing someone was sobbing inside the ventilation trunk.",
+        "Whoever is crying in those ducts sounds ashamed to be heard. It walked past the ward glass with its hands pressed over its face.",
+        "I am pinned under the surgical shelving in the Medical Bay. Find a PRY BAR in the Workshop or Storage and a STIMULANT in the med cabinet."
       ],
       "choices": [
-        { "label": "FREE ANA  (-15 POWER)", "short": "Free Ana" },
-        { "label": "SIPHON HER BATTERY  (+20 POWER)", "short": "Siphon battery" }
+        { "label": "MARK ANA'S LOCATION", "short": "Help Ana" },
+        { "label": "CLOSE TERMINAL", "short": "Close" }
       ],
       "results": [
-        "The ward cycles open. Somewhere a door whispers. She is alive.",
-        "The screen gutters. You take the battery. The terminal goes quiet."
+        "Medical Bay status logged to your journal.",
+        "Terminal closed."
       ]
     },
     "bix": {
-      "name": "Bix Okafor", "role": "COMMS", "room": "Comms",
+      "name": "Bix Okafor", "role": "RADIO OPERATOR", "room": "Radio Room",
       "log": [
-        "LOG 0422 // B. OKAFOR // COMMUNICATIONS",
-        "The array still works. One broadcast. Every speaker on this station would scream it for miles.",
-        "And it would hear it. It answers to voices. It has been repeating our own words back through the vents: my mother's name, Chen's laugh, Ana asking for water.",
-        "It is not hunting us because it is hungry. Voss ran the ship's last roll-call and it never stopped taking attendance.",
-        "Send the call and a rescue ship will know to come. It will also know exactly where you stand."
+        "LOG 04 // B. OKAFOR // RADIO ROOM",
+        "Eleven days ago Eli's carrier came back on channel four. He whispered: 'Don't send a rescue diver down, and don't turn the floodlights on the pool.'",
+        "The patch panel in the Radio Room is torn apart. Reconnect the three color-coded cables to lock onto the rescue helicopter's beacon."
       ],
       "choices": [
-        { "label": "SEND DISTRESS CALL  (NOISE MAX, IT HUNTS 8s)", "short": "Distress call" },
-        { "label": "STAY SILENT", "short": "Stay silent" }
+        { "label": "LOG PATCH PANEL CLUES", "short": "Log clues" },
+        { "label": "CLOSE TERMINAL", "short": "Close" }
       ],
       "results": [
-        "Every speaker on the station howls your location. Bix lives. Run.",
-        "You leave the array dark. The terminal clicks off. Bix goes silent."
+        "Patch panel frequency notes saved to your journal.",
+        "Terminal closed."
       ]
     },
     "chen": {
-      "name": "Chen Wei", "role": "ENGINEER", "room": "Reactor",
+      "name": "Chen Wei", "role": "CHIEF ENGINEER", "room": "Engine & Generator",
       "log": [
-        "LOG 0431 // C. WEI // CHIEF ENGINEER // RED CLEARANCE",
-        "Coolant loop three is cracking. I welded the door shut behind me so it would not follow. It did not try the door. It stood in the corridor and listened to me breathe.",
-        "I finally understand it. Voss did not mutate. The station did. It is still him, and it only wants someone to answer.",
-        "Light and noise are the only proof of the living. It follows both. Give it neither and it loses the thread.",
-        "I can seal the loop for 20 power, or cut it for 25. If you launch the pod, launch it in the dark. It follows the light home."
+        "LOG 07 // C. WEI // CHIEF ENGINEER",
+        "Seven nights ago I swung my work lamp toward the bilge ladder and saw its face for one second. Chalk-white skin, ribs like barrel hoops, and wet eyes that flinched.",
+        "I am trapped behind the flooded bulkhead in the Engine Room. Check the wall chart and turn the three drain valves in sequence."
       ],
       "choices": [
-        { "label": "SEAL COOLANT LOOP  (-20 POWER)", "short": "Seal loop" },
-        { "label": "CUT THE LOOP  (+25 POWER)", "short": "Cut loop" }
+        { "label": "LOG DRAIN VALVE CHART", "short": "Log chart" },
+        { "label": "CLOSE TERMINAL", "short": "Close" }
       ],
       "results": [
-        "The loop seals with a long sigh of steam. Chen is alive.",
-        "The coolant bleeds out into the dark. You take the power. The screen dies."
+        "Engine room flood control notes saved to your journal.",
+        "Terminal closed."
       ]
     }
   },
   "notes": [
-    "DAY 11 - lights off in all quarters. No one sleeps.",
-    "DO NOT RUN. It hears boots on grating from three rooms away.",
-    "It waves. Why does it wave?",
-    "Pod key is in a pink locker somewhere. I forget which. God, I forget.",
-    "Generators still hold a charge. Hold the lever. Eight seconds. It will hear you.",
-    "Chen sealed himself in the Reactor. RED card opens the door.",
-    "THE QUIET ONES LIVE LONGEST",
-    "I can hear my name in the vents."
+    "DO NOT LOOK AT ITS FACE. Keep your beam low when you hear weeping.",
+    "Heavy watertight doors can be closed behind you (HOLD E 0.5s). It has to bash them down.",
+    "Supply chests blink green in the dark. Rations, stew, and hot soup restore health.",
+    "Blue keycard + 10 Power opens the Helideck Blast Gate in the Topside zone.",
+    "Eli's silver locket is still in the farthest dead-end chest on the rig.",
+    "Ana is pinned in Medical. Bix is in Radio. Chen is in Engine. Dara is hiding in Cold Storage.",
+    "Press J at any time to read collected logs and clue codes in your Journal.",
+    "If you hear it sobbing, turn away and walk quietly."
   ],
   "messages": {
-    "locked_red": "Locked. This door needs a RED keycard.",
-    "locked_blue": "Locked. This door needs a BLUE keycard.",
+    "locked_red": "Locked. This bulkhead needs a RED keycard.",
+    "locked_blue": "Locked. The Helideck Blast Gate needs a BLUE keycard.",
     "no_power": "Not enough power.",
-    "dark_warn": "The dark is getting to you. Turn the flashlight on.",
-    "power_out": "POWER DEAD. The scanner screams. It can hear you.",
+    "dark_warn": "The cold dark is getting to you. Turn the flashlight on.",
+    "power_out": "POWER DEAD. Your suit alarm is beeping. Find a generator.",
     "flash_dead": "No power. The flashlight will not turn on.",
-    "no_decoy": "No decoys left.",
-    "card_hint_red": "Face a RED door and press E to open it.",
-    "card_hint_blue": "Face a BLUE door and press E to open it.",
-    "locker_empty": "Empty. Only dust and a torn glove.",
-    "pod_blue": "The pod is sealed. It needs a BLUE keycard.",
-    "pod_power": "Not enough power to launch. 10 needed."
+    "no_decoy": "No noise decoys left.",
+    "no_food": "No food rations left.",
+    "full_health": "Health is already full.",
+    "card_hint_red": "Face a RED door and press E to unlock it.",
+    "card_hint_blue": "Face the HELIDECK BLAST GATE and press E to unlock it.",
+    "pry_hint": "Face the fallen shelving in Medical Bay and hold E to lever it off.",
+    "locket_hint": "Eli's silver locket. Place it at the marked spot on the Helideck edge.",
+    "locker_empty": "Chest is empty.",
+    "pod_blue": "The Helideck Blast Gate is sealed. It needs the BLUE keycard.",
+    "pod_power": "Not enough power to cycle the Blast Gate. 10 power needed.",
+    "storm_stage_1": "The storm is getting worse. Waves slam against the rig legs.",
+    "storm_stage_2": "The storm is getting worse. Sleet lashes the steel bulkheads.",
+    "storm_stage_3": "The storm is getting worse. One minute before the rig gives way."
   },
   "endings": {
-    "everyone": { "title": "EVERYONE OUT", "text": "Three heartbeats in a pod built for four. Behind you the station folds quietly around the thing that waved. For once, nobody is listening." },
-    "some": { "title": "SOME OF YOU", "text": "The pod clears the hull. You count the empty seats. Someone out there is still tapping on a wall, hoping you hear." },
-    "alone": { "title": "YOU, ALONE", "text": "You launch into silence. Nobody to thank you, nobody to blame you. Only the sound of your own breathing, and something very far away that sounds like clapping." },
-    "caught": { "title": "IT FOUND YOU", "text": "A long cold hand. A pale face too close. The last thing you hear is your own name, spoken in a voice you almost know." },
-    "hull": { "title": "HULL FAILURE", "text": "The station tears itself in half. It was never going to wait for you. Somewhere in the debris, something keeps waving." },
-    "dark": { "title": "LOST IN THE DARK", "text": "You stopped being able to tell where you ended and the dark began. It did not need to find you. You came to it." },
-    "quiet": { "title": "THE LONG QUIET", "text": "You killed the light and stood still as the pod charged. The thing at the glass raised one long hand, and for the first time it did not wave. It said goodbye. Captain Voss finally stopped taking attendance." }
+    "everyone": { "title": "EVERYONE", "text": "Ana, Bix, Chen, and Dara sit shoulder to shoulder along the cabin bench, their bruised hands clasped together as the rotors claw into the gale." },
+    "some": { "title": "ALMOST", "text": "Survivors sit buckled beside you as the platform drops away into the black North Sea." },
+    "alone": { "title": "ALONE", "text": "You strap yourself into the cold webbing alone. Four harnesses swing empty beside you as the platform drops away." },
+    "caught": { "title": "SEEN", "text": "You looked, and he could not stop himself. Up close, through the terrible unhinged scream, the pale eyes are still your brother's." },
+    "hull": { "title": "CLAIMED BY THE SEA", "text": "Ten minutes ran out. With a sound like cannon fire, the starboard support leg gives way to the storm swell." },
+    "dark": { "title": "LOST IN THE DARK", "text": "The cold and the pitch dark took the last of your strength." },
+    "quiet": { "title": "ELI'S REST", "text": "Down on the storm-lashed helideck, Eli kneels where you left his locket on the steel, his shoulders finally still." }
   }
 }

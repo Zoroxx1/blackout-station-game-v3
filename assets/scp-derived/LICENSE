@@ -1,0 +1,7 @@
+Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+https://creativecommons.org/licenses/by-sa/3.0/
+
+ATTRIBUTION NOTICE:
+Content relating to the SCP Foundation, including the SCP Foundation logo and the SCP-096 ("The Shy Guy") behavioral concept, is licensed under Creative Commons Sharealike 3.0 and all concepts originate from https://scpwiki.com and its authors (original SCP-096 article by Dr Dan).
+
+Files in this directory (`assets/scp-derived/`) and the corresponding procedural creature rig/AI (`src/game/monster.js`, `src/game/monsterai.js`) implement an original pale deep-sea creature ("Eli Vance / The Diver") inspired by the SCP-096 gaze-triggered distress/rage mechanic, and are released under CC BY-SA 3.0. No third-party sculptures or reference images were copied, traced, or bundled.

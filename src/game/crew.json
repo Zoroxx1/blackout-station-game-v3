@@ -1,0 +1,88 @@
+{
+  "crew": {
+    "ana": {
+      "id": "ana",
+      "name": "Ana Reyes",
+      "role": "Platform Medic",
+      "roomType": "medical_bay",
+      "style": "RESCUE",
+      "bio": "Calm and practical, hides her fear by working. Eli once stitched her hand during a Force 9 gale.",
+      "intro": "Ana is pinned beneath a collapsed surgical shelving unit, her leg trapped against the deck drain. Her breathing is shallow.",
+      "choices": {
+        "help": "HELP ANA (Needs Pry Bar -> Hold E 6s -> Give Stimulant 2s)",
+        "leave": "TAKE HER POCKET BATTERY & LEAVE (+20 POWER)"
+      },
+      "steps": {
+        "needPryBar": "Pinned under heavy steel shelving. You need a PRY BAR from a Workshop or Storage chest.",
+        "leverShelf": "HOLD [E] WITH PRY BAR TO LEVER SHELVING (6s, +15 NOISE/s)",
+        "needStim": "The shelf is off, but Ana is in shock. Find the STIMULANT in the Medical Bay cabinet.",
+        "giveStim": "HOLD [E] TO ADMINISTER STIMULANT (2s)"
+      },
+      "rewardHelp": { "health": 20, "item": "medkit", "msg": "Ana presses a field medkit into your palm (+20 HEALTH). \"Go, Nora. I know the back stairs to the helideck.\"" },
+      "rewardLeave": { "power": 20, "msg": "You unclip the battery pack from her belt (+20 POWER) and step back into the corridor without looking at her eyes." },
+      "savedLine": "\"Eli stitched my palm two winters ago. I'm not letting his sister die down here. Meet me at the chopper.\"",
+      "leftRadio": "[RADIO - ANA]: \"Nora... the water's coming through the drain. Tell your mother Eli was brave.\""
+    },
+    "bix": {
+      "id": "bix",
+      "name": "Bix Okafor",
+      "role": "Radio Operator",
+      "roomType": "radio_room",
+      "style": "REPAIR_PUZZLE",
+      "bio": "Chatty, anxious, jokes when scared. Heard Eli's last transmission from the cavern.",
+      "intro": "Bix is crouched behind the main transceiver rack, hands shaking as sparks spit from a torn patch panel.",
+      "choices": {
+        "help": "REPAIR PATCH PANEL (Reconnect 3 cable pairs using clue note)",
+        "leave": "CUT THE TRANSCEIVER & LEAVE (60s quiet rig: 2x noise decay)"
+      },
+      "steps": {
+        "puzzlePrompt": "PRESS [E] TO OPEN PATCH PANEL PUZZLE"
+      },
+      "rewardHelp": { "revealHelideck": true, "msg": "The carrier wave locks in. Bix beams: \"Got the beacon! I'm patching the helideck route straight to your HUD!\"" },
+      "rewardLeave": { "quietSeconds": 60, "msg": "You pull the main breaker. The radio room goes dead silent. For 60 seconds your noise decays twice as fast." },
+      "savedLine": "\"Still the best electrician on Halcyon Deep! I'll keep the pilot holding on channel 16—see you topside!\"",
+      "leftRadio": "[RADIO - BIX]: \"Static's eating the band... if anyone's listening onshore, we were ninety klicks out...\""
+    },
+    "chen": {
+      "id": "chen",
+      "name": "Chen Wei",
+      "role": "Chief Engineer",
+      "roomType": "engine_room",
+      "style": "VALVE_SEQUENCE",
+      "bio": "Gruff, loyal to the machines. Saw its face for one second and has not forgiven himself.",
+      "intro": "Cold black seawater sloshes knee-deep against a jammed bulkhead door. Chen is trapped on the other side, rapping a wrench against the steel.",
+      "choices": {
+        "help": "DRAIN FLOODED BULKHEAD (Turn 3 valves in wall-chart order, 3s each)",
+        "leave": "STRIP HIS RESERVE CELLS & LEAVE (+25 POWER)"
+      },
+      "steps": {
+        "valvePrompt": "HOLD [E] TO TURN VALVE (3s, +25 NOISE) — CHECK WALL CHART FOR ORDER",
+        "openDoor": "PRESS [E] TO UNLATCH DRAINED BULKHEAD"
+      },
+      "rewardHelp": { "power": 30, "msg": "Chen throws the auxiliary tie-breaker (+30 POWER). \"Backup bus is yours, kid. Don't look at its face.\"" },
+      "rewardLeave": { "power": 25, "msg": "You pry the reserve lithium cells out of the external rack (+25 POWER) and leave the bulkhead sealed." },
+      "savedLine": "\"I looked at him for one second by the manifold. He didn't want to hurt me, Nora—he just couldn't bear being seen.\"",
+      "leftRadio": "[RADIO - CHEN]: \"Water's over the turbines now. Keep moving, kid. Don't look back.\""
+    },
+    "dara": {
+      "id": "dara",
+      "name": "Dara Holt",
+      "role": "Galley Cook",
+      "roomType": "cold_storage",
+      "style": "CALM_PATIENCE",
+      "bio": "Gentle and terrified, hiding. Used to leave warm soup out for Eli on night shifts.",
+      "intro": "The insulated chiller door is latched from the inside. Through the frosted vent you hear Dara whispering a prayer, too terrified of loud noises to unbolt it.",
+      "choices": {
+        "help": "WAIT QUIETLY BY HER DOOR (Stay within 3m with Noise < 10 for 10s)",
+        "leave": "RAID HER EMERGENCY RATION STASH & LEAVE (+3 FOOD)"
+      },
+      "steps": {
+        "calmPrompt": "STAND WITHIN 3m WITH NOISE UNDER 10 FOR 10 SECONDS"
+      },
+      "rewardHelp": { "food": 2, "msg": "The heavy latch clicks open. Dara hugs you briefly and hands you two warm ration packs (+2 FOOD)." },
+      "rewardLeave": { "food": 3, "msg": "You wrench the outer supply bin open, grab three ration tins (+3 FOOD), and leave Dara bolted inside." },
+      "savedLine": "\"I left hot soup by the moon pool every night after he vanished. The bowl was always empty by dawn. Let's go home.\"",
+      "leftRadio": "[RADIO - DARA]: \"It's outside the freezer door... it's crying, Nora. Why is it crying?\""
+    }
+  }
+}

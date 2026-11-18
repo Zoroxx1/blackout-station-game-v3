@@ -1,14 +1,71 @@
 {
-  "version": 1,
+  "version": 2,
   "notes": [
-    "All textures, 3D models, sprites and sounds are generated procedurally at load time (canvas / Three.js geometry / Web Audio offline rendering). No third-party art or audio files are bundled.",
-    "Drop licensed files into src/assets/audio/ using the exact names from the brief (e.g. creak-1.ogg, monster-howl.ogg) and list them here; they automatically override the synthesized versions."
+    "All textures, 3D models, sprites and sounds are generated procedurally at load time (canvas / Three.js geometry / Web Audio offline rendering). No third-party binary art or audio files are bundled.",
+    "Content relating to the SCP Foundation, including the SCP Foundation logo, is licensed under Creative Commons Sharealike 3.0 and all concepts originate from scpwiki.com and its authors. Blackout Station: Halcyon Deep, being derived from this content, is hereby also released under Creative Commons Sharealike 3.0.",
+    "All SCP-096 derived conceptual/procedural assets are documented and separated in assets/scp-derived/ under CC BY-SA 3.0.",
+    "Drop licensed audio files into src/assets/audio/ using the exact names from synth.js (e.g. creak-1.ogg, monster-sob-1.ogg) and list them here; they automatically override the synthesized versions."
   ],
   "assets": [
-    { "name": "Silkscreen (pixel font)", "pack": "@fontsource/silkscreen", "author": "Jason Kottke", "source": "https://fonts.google.com/specimen/Silkscreen", "license": "OFL-1.1", "downloaded": "2026-01", "changes": "none (woff2 bundled via npm)", "path": "node_modules/@fontsource/silkscreen -> inlined in dist" },
-    { "name": "Three.js", "pack": "three", "author": "mrdoob and contributors", "source": "https://threejs.org", "license": "MIT", "downloaded": "2026-01", "changes": "none", "path": "node_modules/three" },
-    { "name": "Procedural PBR texture sets (walls, floors, ceilings, plating, rust, crate, hazard, concrete, decals, signs)", "pack": "in-engine", "author": "Blackout Station", "source": "src/game/textures.js", "license": "CC0 (original work)", "downloaded": "n/a", "changes": "generated on canvas", "path": "src/game/textures.js" },
-    { "name": "Procedural 3D models (world kit, doors, hatches, lockers, terminals, generators, pod, props, hands, items, monster)", "pack": "in-engine", "author": "Blackout Station", "source": "src/game/world.js, hands.js, monster.js", "license": "CC0 (original work)", "downloaded": "n/a", "changes": "built from Three.js primitives", "path": "src/game/" },
-    { "name": "Procedural sound bank (all effects, ambience, music layers)", "pack": "in-engine", "author": "Blackout Station", "source": "src/game/synth.js", "license": "CC0 (original work)", "downloaded": "n/a", "changes": "rendered offline with Web Audio", "path": "src/game/synth.js" }
+    {
+      "name": "Silkscreen (pixel font)",
+      "pack": "@fontsource/silkscreen",
+      "author": "Jason Kottke",
+      "source": "https://fonts.google.com/specimen/Silkscreen",
+      "license": "OFL-1.1",
+      "downloaded": "2026-01",
+      "changes": "none (woff2 bundled via npm)",
+      "path": "node_modules/@fontsource/silkscreen -> inlined in dist"
+    },
+    {
+      "name": "Three.js",
+      "pack": "three",
+      "author": "mrdoob and contributors",
+      "source": "https://threejs.org",
+      "license": "MIT",
+      "downloaded": "2026-01",
+      "changes": "none",
+      "path": "node_modules/three"
+    },
+    {
+      "name": "Offshore Oil Rig PBR Texture Sets (70/25/5 wall panel atlas, grating/tread/nonslip floors, ceilings, plating, rust, supply crates, hazard, concrete, decals, 20-room sign atlas)",
+      "pack": "in-engine procedural",
+      "author": "Blackout Station: Halcyon Deep",
+      "source": "src/game/textures.js",
+      "license": "CC0 (original procedural work)",
+      "downloaded": "n/a",
+      "changes": "generated on canvas with salt/rain/wetness roughness layers",
+      "path": "src/game/textures.js"
+    },
+    {
+      "name": "Offshore Oil Rig 3D World & Props Kit (15 room types x 2 layouts, 10 door styles, Helideck Escape Gate, stormy Helideck, rescue helicopter, blinking LED supply chests, food tins, pry bar, locket, crew rescue setpieces)",
+      "pack": "in-engine procedural",
+      "author": "Blackout Station: Halcyon Deep",
+      "source": "src/game/world.js, src/game/hands.js, src/game/templates.json",
+      "license": "CC0 (original procedural work)",
+      "downloaded": "n/a",
+      "changes": "built from Three.js primitives and instanced/merged geometries",
+      "path": "src/game/world.js"
+    },
+    {
+      "name": "Offshore Oil Rig Soundscape & Room Tone Bank (ocean swells, thunder, steel creaks, 14 room tones, door styles, chest latches, food eating, adaptive tension layers)",
+      "pack": "in-engine procedural",
+      "author": "Blackout Station: Halcyon Deep",
+      "source": "src/game/synth.js, src/game/audio.js",
+      "license": "CC0 (original procedural work)",
+      "downloaded": "n/a",
+      "changes": "rendered offline with Web Audio API",
+      "path": "src/game/synth.js"
+    },
+    {
+      "name": "SCP-096 Derived Pale Sea Creature ('Eli Vance') Procedural Rigged Model, 11 Animations, Gaze-Triggered AI State Machine &Vocal Synthesis",
+      "pack": "scp-derived procedural",
+      "author": "Blackout Station: Halcyon Deep (concept derived from SCP-096 by Dr Dan / SCP Wiki)",
+      "source": "https://scpwiki.com/scp-096",
+      "license": "CC BY-SA 3.0",
+      "downloaded": "n/a",
+      "changes": "original deep-sea diver twist (barnacles, wet chalk skin, unhinging jaw, 6-state AI, sobbing/scream synthesis)",
+      "path": "assets/scp-derived/LICENSE"
+    }
   ]
 }
